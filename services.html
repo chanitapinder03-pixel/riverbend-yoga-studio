@@ -39,6 +39,36 @@
       </div>
     </section>
 
+
+    <section id="class-finder" aria-labelledby="finder-heading">
+      <h2 id="finder-heading">Find Your Best Class</h2>
+      <p>Choose what you want from your practice and your current experience level. Riverbend will suggest a class that fits your needs and remember your choice for your next visit.</p>
+
+      <div class="finder-controls">
+        <div>
+          <label for="goal">What is your main goal?</label>
+          <select id="goal">
+            <option value="">Choose a goal</option>
+            <option value="ease">Move gently and build confidence</option>
+            <option value="energy">Build energy and enjoy a flowing practice</option>
+            <option value="relax">Relax, slow down, and reduce stress</option>
+          </select>
+        </div>
+        <div>
+          <label for="finder-experience">What is your experience level?</label>
+          <select id="finder-experience">
+            <option value="">Choose your experience level</option>
+            <option value="new">New to yoga</option>
+            <option value="some">Some yoga experience</option>
+            <option value="experienced">Experienced</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="button" id="find-class-button">Find My Class</button>
+      <div id="class-result" class="class-result" role="status" aria-live="polite"></div>
+    </section>
+
     <section aria-labelledby="private-heading">
       <h2 id="private-heading">Private Sessions</h2>
       <p>One-on-one sessions are available for students who want individualized guidance, help learning foundational poses, or a practice adapted to personal mobility and comfort needs. Private sessions are scheduled by request.</p>
@@ -63,5 +93,6 @@
       <p><a href="events.html">Ask about classes, pricing, or events</a></p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

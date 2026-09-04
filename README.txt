@@ -28,3 +28,12 @@ Touchstone 3 features:
 
 The guided breathing MP3 satisfies the assignment requirement for one 30–60 second
 guided breathing audio OR intro video, so the intro video is not required for this site.
+
+
+Touchstone 4 JavaScript features:
+- Find Your Best Class interactive recommendation feature
+- Class data stored in an array of objects
+- localStorage remembers the user's class recommendation
+- Saved class preference pre-fills the Events form interest selector
+- Custom JavaScript form validation with inline error feedback
+- Required/name-length, email-format, selection, and message-length checks
