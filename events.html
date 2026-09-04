@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riverbend Yoga Studio | Workshops and Events</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riverbend Yoga Studio | Workshops and Events</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Workshops and Events</h1>
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="services.html">Classes and Services</a>
-            <a href="about.html">About the Studio</a>
-            <a href="events.html" aria-current="page">Workshops and Events</a>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">Workshops and Events</h1>
+      <p class="tagline">Explore monthly workshops and request a spot without online checkout.</p>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Classes and Services</a>
+        <a href="about.html">About the Studio</a>
+        <a href="events.html" aria-current="page">Workshops and Events</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section aria-labelledby="monthly-heading">
-            <h2 id="monthly-heading">Monthly Workshop List</h2>
-            <div class="split-layout">
-                <ul class="workshop-list">
-                    <li><strong>September 12:</strong> Yoga Basics for Beginners - 10:00 a.m.</li>
-                    <li><strong>September 19:</strong> Desk-to-Mat Mobility for Busy Professionals - 6:00 p.m.</li>
-                    <li><strong>September 26:</strong> Restorative Yoga and Guided Relaxation - 4:00 p.m.</li>
-                </ul>
+  <main>
+    <section aria-labelledby="monthly-heading">
+      <div class="event-layout">
+        <div>
+          <h2 id="monthly-heading">Monthly Workshop List</h2>
+          <ul>
+            <li><strong>September 12:</strong> Yoga Basics for Beginners - 10:00 a.m.</li>
+            <li><strong>September 19:</strong> Desk-to-Mat Mobility for Busy Professionals - 6:00 p.m.</li>
+            <li><strong>September 26:</strong> Restorative Yoga and Guided Relaxation - 4:00 p.m.</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="yoga-workshop.jpg" alt="Yoga students participating in a supportive group workshop at Riverbend Yoga Studio">
+          <figcaption>A Riverbend workshop gives students extra time to learn, ask questions, and practice together.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-                <figure>
-                    <img src="yoga-workshop.jpg" alt="Yoga students participating in a supportive group workshop at Riverbend Yoga Studio">
-                    <figcaption>A Riverbend workshop gives students extra time to learn, ask questions, and practice together.</figcaption>
-                </figure>
+    <section aria-labelledby="request-heading">
+      <h2 id="request-heading">Request a Spot or More Information</h2>
+      <p>Complete this form to tell us which class or event interests you. Submitting the form is an information request and does not require payment.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your Contact Information</legend>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required minlength="2" autocomplete="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Yoga Interest</legend>
+          <label for="interest">Class or event interest</label>
+          <select id="interest" name="interest" required>
+            <option value="">Choose an option</option>
+            <option value="gentle">Gentle Yoga</option>
+            <option value="vinyasa">Vinyasa Yoga</option>
+            <option value="restorative">Restorative Yoga</option>
+            <option value="private">Private Session</option>
+            <option value="beginner-workshop">Yoga Basics for Beginners Workshop</option>
+            <option value="mobility-workshop">Desk-to-Mat Mobility Workshop</option>
+            <option value="relaxation-workshop">Restorative Yoga and Guided Relaxation Workshop</option>
+          </select>
+
+          <label for="experience">Experience level</label>
+          <select id="experience" name="experience" required>
+            <option value="">Choose your experience level</option>
+            <option value="new">New to yoga</option>
+            <option value="beginner">Beginner</option>
+            <option value="some-experience">Some experience</option>
+            <option value="experienced">Experienced</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferred Contact Method</legend>
+          <div class="radio-row">
+            <div class="radio-option">
+              <input type="radio" id="contact-email" name="contact-method" value="email" required>
+              <label for="contact-email">Email</label>
             </div>
-        </section>
+            <div class="radio-option">
+              <input type="radio" id="contact-phone" name="contact-method" value="phone">
+              <label for="contact-phone">Phone</label>
+            </div>
+          </div>
+        </fieldset>
 
-        <section aria-labelledby="request-heading">
-            <h2 id="request-heading">Request a Spot or More Information</h2>
-            <p>Complete this form to tell us which class or event interests you. Submitting the form is an information request and does not require payment.</p>
+        <fieldset>
+          <legend>Your Message</legend>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required minlength="10" maxlength="500" placeholder="Tell us what you would like to know or any accommodations you may need."></textarea>
+        </fieldset>
 
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Your Contact Information</legend>
+        <button type="submit">Request Information</button>
+      </form>
+    </section>
+  </main>
 
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required minlength="2" autocomplete="name">
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required autocomplete="email">
-                </fieldset>
-
-                <fieldset>
-                    <legend>Your Yoga Interest</legend>
-
-                    <label for="interest">Class or event interest</label>
-                    <select id="interest" name="interest" required>
-                        <option value="">Choose an option</option>
-                        <option value="gentle">Gentle Yoga</option>
-                        <option value="vinyasa">Vinyasa Yoga</option>
-                        <option value="restorative">Restorative Yoga</option>
-                        <option value="private">Private Session</option>
-                        <option value="beginner-workshop">Yoga Basics for Beginners Workshop</option>
-                        <option value="mobility-workshop">Desk-to-Mat Mobility Workshop</option>
-                        <option value="relaxation-workshop">Restorative Yoga and Guided Relaxation Workshop</option>
-                    </select>
-
-                    <label for="experience">Experience level</label>
-                    <select id="experience" name="experience" required>
-                        <option value="">Choose your experience level</option>
-                        <option value="new">New to yoga</option>
-                        <option value="beginner">Beginner</option>
-                        <option value="some-experience">Some experience</option>
-                        <option value="experienced">Experienced</option>
-                    </select>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Preferred Contact Method</legend>
-                    <div class="radio-group">
-                        <div class="radio-option">
-                            <input type="radio" id="contact-email" name="contact-method" value="email" required>
-                            <label for="contact-email">Email</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" id="contact-phone" name="contact-method" value="phone">
-                            <label for="contact-phone">Phone</label>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Your Message</legend>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" required minlength="10" maxlength="500" placeholder="Tell us what you would like to know or any accommodations you may need."></textarea>
-                </fieldset>
-
-                <button type="submit">Request Information</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Riverbend Yoga Studio. All rights reserved.</p>
-        <p><a href="about.html">Read about our instructors and accessibility accommodations</a></p>
-    </footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Riverbend Yoga Studio. All rights reserved.</p>
+      <p><a href="about.html">Read about our instructors and accessibility accommodations</a></p>
+    </div>
+  </footer>
 </body>
 </html>
