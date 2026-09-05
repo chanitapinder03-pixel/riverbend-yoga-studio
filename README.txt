@@ -1,4 +1,4 @@
-Riverbend Yoga Studio — Touchstone Task 3 Website
+Riverbend Yoga Studio — Touchstone Task 4 Website
 
 Files included:
 - index.html
